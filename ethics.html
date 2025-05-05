@@ -2,42 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ethics - FRT Ethics</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ethical Analysis of Facial Recognition Technology</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Tahoma, sans-serif;
+      background-color: #e6f2ff; /* light blue */
+      color: #003366; /* dark blue */
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      background-color: #003366;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1.5rem 2rem; /* Reduced padding to decrease space */
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem; /* Reduced margin for less space */
+    }
+
+    .grid {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 300px;
+      height: 150px;
+      background-color: #cce0ff;
+      border: 2px solid #003366;
+      border-radius: 10px;
+      color: #003366;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .card:hover {
+      background-color: #99ccff;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <h1>FRT Ethics</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="introduction.html">Introduction</a>
+    <a href="applications.html">Applications</a>
+    <a href="ethics.html">Ethics</a>
+  </nav>
+
+  <div class="container">
+    <h2>Explore Ethical Perspectives</h2>
+    <p>Click on each section to explore the ethical dimensions of Facial Recognition Technology (FRT).</p>
+
+    <div class="grid">
+      <a href="lenses.html" class="card">Ethical Lenses</a>
+      <a href="implications.html" class="card">Ethical and Social Implications</a>
+      <a href="recommendation.html" class="card">Ethical Recommendations</a>
+      <a href="conclusion.html" class="card">Conclusion</a>
     </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="introduction.html">Introduction</a></li>
-        <li><a href="applications.html">Applications</a></li>
-        <li><a href="ethics.html" class="active">Ethics</a></li>
-      </ul>
-    </nav>
-  </header>
+  </div>
 
-  <main class="container">
-    <section class="ethics-overview">
-      <h2>Ethical Discussion on Facial Recognition Technology</h2>
-      <p>Facial Recognition Technology (FRT) presents a range of ethical concerns in its design, implementation, and use. This section examines the key issues from multiple ethical perspectives.</p>
-    </section>
-
-    <section class="ethics-topic">
-      <h3>Surveillance & Privacy</h3>
-      <p>FRT can be used for mass surveillance, often without public consent. This raises significant privacy concerns, particularly regarding the collection and storage of biometric data without individuals' knowledge or approval.</p>
-    </section>
-
-    <section class="ethics-topic">
-      <h3>Bias & Fairness</h3>
-      <p>Multiple studies show FRT systems may exhibit racial and gender bias, leading to inaccurate identifications and potential discrimination. Ethical deployment requires transparent datasets, unbiased training methods, and continuous testing for fairness.</p>
-    </section>
-
-    <section class="ethics-topic">
-      <h3>Responsibility & Accountability</h3>
-      <p>When FRT is misused—by governments, law enforcement, or private companies—who is accountable? Clear policies must define responsibility for harms caused by technical errors, misuse, or overreach.</p>
-    </section>
+</body>
+</html>

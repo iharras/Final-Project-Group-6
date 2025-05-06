@@ -40,7 +40,7 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 1.5rem 2rem; /* Reduced padding to decrease space */
+      padding: 1.5rem 2rem;
     }
 
     h2 {
@@ -50,7 +50,7 @@
 
     p {
       font-size: 1rem;
-      margin-bottom: 1.5rem; /* Reduced margin for less space */
+      margin-bottom: 1.5rem;
     }
 
     .grid {
@@ -83,6 +83,15 @@
     .card:hover {
       background-color: #99ccff;
     }
+
+    .card-image {
+      width: 300px;
+      height: 150px;
+      object-fit: cover;
+      border: 2px solid #003366;
+      border-radius: 10px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    }
   </style>
 </head>
 <body>
@@ -101,6 +110,7 @@
     <div class="grid">
       <a href="lenses.html" class="card">Ethical Lenses</a>
       <a href="implications.html" class="card">Ethical and Social Implications</a>
+      <img src="ethics.png" alt="Ethics Image" class="card-image" />
       <a href="recommendation.html" class="card">Ethical Recommendations</a>
       <a href="conclusion.html" class="card">Conclusion</a>
     </div>

@@ -1,10 +1,169 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Applications - FRT Ethics</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Tahoma', sans-serif;
+      background-color: #f4f7f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #003366;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #00509e;
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 3rem;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      color: #003366;
+      text-align: center;
+      margin-bottom: 2rem;
+      border-bottom: 2px solid #cce0ff;
+      padding-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    .content-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .links {
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .links:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .links a {
+      font-size: 1.3rem;
+      color: #003366;
+      font-weight: bold;
+      text-decoration: none;
+      margin-bottom: 1rem;
+    }
+
+    .links p {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .links:nth-child(1) {
+      background-color: #cce7ff;
+    }
+
+    .links:nth-child(2) {
+      background-color: #a3c6e1;
+    }
+
+    .links:nth-child(3) {
+      background-color: #79a3c3;
+    }
+
+    .links:nth-child(4) {
+      background-color: #4f89b0;
+    }
+
+    .links:nth-child(5) {
+      background-color: #3c6a8d;
+    }
+
+    .links:nth-child(6) {
+      background-color: #2a4a6b;
+    }
+
+    .gif-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+
+    .gif-container img {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .content-row-end {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .challenges {
+      text-align: left;
+      font-size: 1.05rem;
+      color: #444;
+      line-height: 1.7;
+      margin-top: 3rem;
+    }
+
+    .challenges ul {
+      padding-left: 1.5rem;
+    }
+
+    .challenges li {
+      margin-bottom: 1rem;
+    }
+
+    .challenges h2 {
+      color: #003366;
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
 <body>
   <nav>
@@ -12,7 +171,9 @@
     <a href="introduction.html">Introduction</a>
     <a href="applications.html">Applications</a>
     <a href="ethics.html">Ethics</a>
+    <a href="references.html">References</a>
   </nav>
+
   <div class="container">
     <h1>Applications of Facial Recognition Technology</h1>
     <p>Facial Recognition Technology (FRT) is being used in a variety of fields to improve convenience, enhance security, and deliver personalized experiences.</p>
@@ -20,33 +181,52 @@
     <div class="content-row">
       <div class="links">
         <a href="#">Security & Surveillance</a>
-        <p>Used by law enforcement to identify suspects, track movements, and enhance airport security systems.</p>
+        <p>Surveillance systems in public spaces are used to identify suspects or missing persons, improving public safety and speeding up criminal investigations.</p>
       </div>
 
       <div class="links">
         <a href="#">Smartphones & Devices</a>
-        <p>Popular for unlocking phones, verifying identities for apps, and processing mobile payments like Face ID.</p>
+        <p>Face unlock features on smartphones and tablets enhance user convenience and data protection.</p>
       </div>
 
       <div class="links">
+        <a href="#">Airports & Border Control</a>
+        <p>Automated passport control and boarding verification reduce wait times and improve identity management.</p>
+      </div>
+    </div>
+
+    <div class="gif-container">
+      <img src="Gif1.gif" alt="Facial Recognition in Action" />
+      <img src="Gif2.gif" alt="FRT at Airports" />
+      <img src="Gif3.gif" alt="FRT in Banking" />
+    </div>
+
+    <div class="content-row-end">
+      <div class="links">
         <a href="#">Retail & Marketing</a>
-        <p>Retailers use FRT to analyze shopping behavior, prevent theft, and create tailored customer experiences.</p>
+        <p>Tracking customer behavior and delivering personalized ads help businesses understand consumer preferences and tailor experiences.</p>
       </div>
 
       <div class="links">
         <a href="#">Healthcare</a>
-        <p>FRT helps with patient check-ins, access control, and identity verification in hospitals and clinics.</p>
-      </div>
-
-      <div class="links">
-        <a href="#">Social Media & Entertainment</a>
-        <p>Platforms use it for automatic photo tagging, filters, and creating personalized avatars or experiences.</p>
+        <p>Facial recognition is used for patient identification and access control in hospitals, reducing medical errors and enhancing data security.</p>
       </div>
 
       <div class="links">
         <a href="#">Banking & Finance</a>
-        <p>Banks use it for fraud prevention, customer authentication, and ATM access without cards.</p>
+        <p>Biometric authentication enables secure online banking and ATM withdrawals, minimizing fraud and improving access control.</p>
       </div>
+    </div>
+
+    <div class="challenges">
+      <h2>Challenges and Social Concerns</h2>
+      <ul>
+        <li><strong>Accuracy and bias:</strong> Many systems misidentify people of color, women, and children at higher rates, leading to unfair treatment and harm.</li>
+        <li><strong>Privacy and consent:</strong> Individuals are often scanned without their knowledge or permission, especially in public areas.</li>
+        <li><strong>Lack of regulation:</strong> Few rules exist for how facial data is collected, stored, and used, increasing the risk of misuse or surveillance abuse.</li>
+        <li><strong>Public trust:</strong> People are uneasy about FRT in sensitive places like protests, schools, or healthcare settings.</li>
+      </ul>
+      <p>These challenges make it difficult to ensure that FRT is used fairly, transparently, and responsibly.</p>
     </div>
   </div>
 </body>

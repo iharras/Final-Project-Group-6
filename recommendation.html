@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -50,6 +50,8 @@
       margin-bottom: 1rem;
       border-bottom: 2px solid #cce0ff;
       padding-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
     }
 
     .intro-container p {
@@ -73,6 +75,8 @@
       color: #003366;
       font-weight: bold;
       margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
     }
 
     .recommendation-description {
@@ -87,6 +91,8 @@
       font-weight: bold;
       margin-top: 2rem;
       margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
     }
 
     .stakeholder-list {
@@ -106,18 +112,43 @@
     .emoji {
       font-size: 1.5rem;
     }
+
+    /* 🌟 GIF Styling */
+    .top-right-gif {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 150px; /* Increased size */
+      height: auto;
+      z-index: 1000;
+    }
+
+    /* 🌟 GIF at the beginning of the sentences */
+    .gif-at-start {
+      margin-right: 15px;
+      width: 60px; /* Increased size */
+      height: auto;
+    }
   </style>
 </head>
 <body>
+  <!-- 🌟 Top-right GIF -->
+  <img src="your-gif.gif" alt="Decorative GIF" class="top-right-gif" />
+
   <nav>
     <a href="index.html">Home</a>
     <a href="introduction.html">Introduction</a>
     <a href="applications.html">Applications</a>
     <a href="ethics.html">Ethics</a>
+    <a href="references.html">References</a>
+    
   </nav>
 
   <div class="intro-container">
-    <h2 class="recommendation-title">Ethical Recommendations for FRT Use</h2>
+    <h2 class="recommendation-title">
+      <img src="gif4.gif" alt="GIF 4" class="gif-at-start" />
+      Ethical Recommendations for FRT Use
+    </h2>
 
     <p class="recommendation-description">
       Key Recommendations:
@@ -131,7 +162,10 @@
       <li><span class="emoji">⏸️</span> <strong>Law enforcement should pause use until clear, strong policies exist.</strong></li>
     </ul>
 
-    <h2 class="stakeholder-title">Stakeholder Actions:</h2>
+    <h2 class="stakeholder-title">
+      <img src="gif5.gif" alt="GIF 5" class="gif-at-start" />
+      Stakeholder Actions:
+    </h2>
 
     <ul class="stakeholder-list">
       <li><strong>🏛️ Policymakers:</strong> <span class="italic">Regulate how and when FRT is used, and require transparency.</span></li>
@@ -141,3 +175,4 @@
   </div>
 </body>
 </html>
+

@@ -8,7 +8,7 @@
   <style>
     .intro-container {
       max-width: 1000px;
-      margin: auto;
+      margin: 2rem auto;
       padding: 2rem;
       background-color: #ffffff;
       border-radius: 10px;
@@ -29,32 +29,35 @@
       margin-bottom: 1.5rem;
     }
 
+    .top-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto 2rem auto;
+      border-radius: 8px;
+    }
+
     .application-section {
       display: flex;
+      align-items: center;
       gap: 2rem;
-      align-items: flex-start;
-      flex-wrap: wrap;
+      margin-bottom: 2rem;
     }
 
     .application-section img {
-      max-width: 300px;
+      width: 40%;
       height: auto;
+      object-fit: cover;
       border-radius: 10px;
-      box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+      box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
     }
 
-    .application-text {
-      flex: 1;
+    .application-section .text {
+      width: 60%;
     }
 
-    ul.custom-list {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-
-    ul.custom-list li {
-      margin-bottom: 0.8rem;
-      font-size: 1.05rem;
+    ul li {
+      margin-bottom: 1.5rem;
     }
   </style>
 </head>
@@ -64,44 +67,42 @@
     <a href="introduction.html">Introduction</a>
     <a href="applications.html">Applications</a>
     <a href="ethics.html">Ethics</a>
-
+    <a href="references.html">References</a>
   </nav>
 
   <div class="intro-container">
-    <h2>What is Facial Recognition Technology (FRT)?</h2>
+    <img src="page1.png" alt="Team Choice" class="top-image">
+
+    <h2>What Technology Did the Team Choose?</h2>
     <p>
-      Facial Recognition Technology (FRT) is a type of biometric system that uses a person’s unique facial features,
-      like the distance between the eyes, nose, and mouth, to identify or verify their identity. It captures an image
-      of a face, converts it into data, and compares it with images stored in a database.
+      Our team has chosen to explore Facial Recognition Technology (FRT), a rapidly advancing field within biometric security that uses the unique features of a person’s face to identify or verify their identity. FRT works by capturing an image or video of a face, analyzing key facial features; such as the distance between the eyes, the shape of the cheekbones, and the contour of the lips; and then comparing this data to a database of known faces to find a match or confirm identity.
     </p>
 
-    <h2>Why It’s Important</h2>
-    <p>
-      Facial Recognition Technology (FRT) is important because it allows systems to identify or verify individuals
-      using their facial features. It plays a significant role in enhancing security, streamlining identification
-      processes, and enabling contactless verification. As a biometric tool, it provides a faster and often more
-      accurate method of identity confirmation compared to traditional ID checks.
-    </p>
-
-    <h2>Application Domain</h2>
+    <h2>What Is Facial Recognition Technology?</h2>
     <div class="application-section">
-      <img src="verification.png" alt="Verification Image" />
-      <div class="application-text">
-        <ul class="custom-list">
-          <li><strong>Security and Law Enforcement:</strong> Surveillance systems in public spaces identify suspects or missing persons.</li>
-          <li><strong>Mobile Devices & Consumer Electronics:</strong> Face unlock features enhance user convenience and protection.</li>
-          <li><strong>Airports and Border Control:</strong> Automated passport control reduces wait times and improves ID management.</li>
-          <li><strong>Retail and Marketing:</strong> Tracks customer behavior and delivers personalized ads.</li>
-          <li><strong>Healthcare:</strong> Used for patient identification and access control in hospitals.</li>
-          <li><strong>Banking and Finance:</strong> Enables secure online banking and ATM withdrawals.</li>
-        </ul>
+      <img src="verification.png" alt="Verification Process">
+      <div class="text">
+        <p>
+          Facial recognition is a type of biometric technology, alongside fingerprint, voice, and iris recognition systems. It operates in several stages: first, a camera detects and captures an image of a face; next, the system analyzes and extracts unique facial features; finally, it compares these features to those stored in a database to make an identification or verification.
+        </p>
+        <p>
+          Modern systems can operate in real time, identifying people in crowds, from photos, or in videos. There are various types of facial recognition systems, including 2D, 3D, and thermal imaging, each offering different levels of accuracy and application.
+        </p>
       </div>
     </div>
 
-    <h2>Why It Matters</h2>
+    <h2>Why Did the Team Choose This Technology? Why Does It Matter?</h2>
     <p>
-      The rapidly expanding use of FRT in security, law enforcement, retail, and personal devices raises urgent ethical
-      questions about surveillance, consent, and bias.
+      We chose facial recognition technology because it sits at the intersection of innovation, security, and social impact. Its significance is evident in several ways:
+    </p>
+    <ul>
+      <li><strong>Widespread Applications:</strong> FRT is already integrated into daily life from unlocking smartphones and securing banking transactions to streamlining airport security and aiding law enforcement in finding missing persons or suspects.</li>
+      <li><strong>Efficiency and Convenience:</strong> The technology offers fast, contactless, and seamless verification, making it more convenient than traditional passwords or physical IDs. It can be easily integrated with existing security systems and provides multi-factor authentication for added safety.</li>
+      <li><strong>Societal Impact:</strong> FRT is reshaping how societies approach identity management, surveillance, and access to services. This brings both opportunities (improved security, reduced fraud, faster services) and challenges (privacy concerns, bias, and ethical dilemmas).</li>
+      <li><strong>Controversy and Debate:</strong> The rapid adoption of FRT has sparked global debates about privacy, consent, and civil liberties. Several cities and companies have restricted or banned its use due to concerns over misidentification, racial bias, and the potential for mass surveillance.</li>
+    </ul>
+    <p>
+      Facial recognition technology matters because it is transforming security, commerce, and governance worldwide. Its benefits are substantial, but so are its risks and ethical challenges. Understanding FRT is crucial for making informed decisions about its future development, regulation, and use in society.
     </p>
   </div>
 </body>
